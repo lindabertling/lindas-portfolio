@@ -1,0 +1,62 @@
+.heroContentWrapper {
+  background-color: #f9f1ff;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+.heroImage {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 64px;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.introduction h1 {
+  color: #74649d;
+}
+
+.introduction h2 {
+  color: #8f6474;
+}
+
+.aboutSection p {
+  color: #808080;
+  padding-left: 32px;
+}
+
+.profilePicture {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  object-position: 0 -15px;
+  margin-right: 24px;
+}
+
+.heroIcons {
+  margin-top: 40px;
+  padding-left: 32px;
+  align-self: flex-start;
+}
+
+.heroIcons > a {
+  margin-right: 32px;
+}
