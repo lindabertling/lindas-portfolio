@@ -7,6 +7,7 @@ import profilePicture from "../../public/images/img_profile-picture.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 // import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
@@ -36,16 +37,20 @@ const HeroSection = () => {
           inventore qui corrupti nisi!
         </p>
         <section className={classes.heroIcons}>
-          <FontAwesomeIcon
-            icon={faLinkedinIn}
-            size="2xl"
-            style={{ color: "#3c1d5a" }}
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            size="2xl"
-            style={{ color: "#3c1d5a" }}
-          />
+          <Link href={"https://www.linkedin.com/in/linda-bertling/"}>
+            <FontAwesomeIcon
+              icon={faLinkedinIn}
+              size="2xl"
+              style={{ color: "#3c1d5a" }}
+            />
+          </Link>
+          <Link href={"https://github.com/lindabertling?tab=repositories"}>
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2xl"
+              style={{ color: "#3c1d5a" }}
+            />
+          </Link>
         </section>
       </section>
     </div>

@@ -45,10 +45,18 @@
   width: 160px;
   height: 160px;
   border-radius: 100%;
+  border: 2px solid #fff;
   object-fit: cover;
   object-position: 0 -15px;
   margin-right: 24px;
 }
 
 .heroIcons {
+  margin-top: 40px;
+  padding-left: 32px;
+  align-self: flex-start;
+}
+
+.heroIcons > a {
+  margin-right: 32px;
 }
