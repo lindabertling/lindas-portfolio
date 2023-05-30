@@ -5,6 +5,10 @@ import classes from "./heroSection.module.css";
 import heroImage from "../../public/images/img_hero-image.jpg";
 import profilePicture from "../../public/images/img_profile-picture.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 const HeroSection = () => {
   return (
     <div className={classes.heroContentWrapper}>
@@ -31,7 +35,18 @@ const HeroSection = () => {
           in ipsam impedit velit repellat dicta recusandae fugiat autem
           inventore qui corrupti nisi!
         </p>
-        <section className={classes.heroIcons}></section>
+        <section className={classes.heroIcons}>
+          <FontAwesomeIcon
+            icon={faLinkedinIn}
+            size="2xl"
+            style={{ color: "#3c1d5a" }}
+          />
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="2xl"
+            style={{ color: "#3c1d5a" }}
+          />
+        </section>
       </section>
     </div>
   );
