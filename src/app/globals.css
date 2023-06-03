@@ -20,14 +20,20 @@ a {
 }
 
 h1 {
+  font-family: "Carlito", sans-serif;
+  font-size: 32px;
 }
 
 h2 {
+  font-family: "Carlito", sans-serif;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 48px;
+  font-family: "Carlito", sans-serif;
+  font-size: 80px;
 }
 p {
   font-family: "EB Garamond", serif;
+  font-size: 22px;
 }
