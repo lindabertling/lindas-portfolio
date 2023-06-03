@@ -28,30 +28,32 @@ const HeroSection = () => {
           <div>
             <h2>Linda Bertling</h2>
             <h1>Frontend Developer</h1>
+            <section className={classes.heroIcons}>
+              <Link href={"https://www.linkedin.com/in/linda-bertling/"}>
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  size="2xl"
+                  style={{ color: "#3c1d5a" }}
+                />
+              </Link>
+              <Link href={"https://github.com/lindabertling?tab=repositories"}>
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="2xl"
+                  style={{ color: "#3c1d5a" }}
+                />
+              </Link>
+            </section>
           </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
-          recusandae. Consequatur eligendi, totam ad voluptas cupiditate sequi
-          in ipsam impedit velit repellat dicta recusandae fugiat autem
-          inventore qui corrupti nisi!
-        </p>
-        <section className={classes.heroIcons}>
-          <Link href={"https://www.linkedin.com/in/linda-bertling/"}>
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              size="2xl"
-              style={{ color: "#3c1d5a" }}
-            />
-          </Link>
-          <Link href={"https://github.com/lindabertling?tab=repositories"}>
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2xl"
-              style={{ color: "#3c1d5a" }}
-            />
-          </Link>
-        </section>
+        <div className={classes.aboutDescription}>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptates, recusandae. Consequatur eligendi, totam ad voluptas
+            cupiditate sequi in ipsam impedit velit repellat dicta recusandae
+            fugiat autem inventore qui corrupti nisi!
+          </p>
+        </div>
       </section>
     </div>
   );
