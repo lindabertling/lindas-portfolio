@@ -36,9 +36,14 @@
   color: #8f6474;
 }
 
-.aboutSection p {
+.aboutDescription {
+  background-color: #ffffff7a;
+  padding: 32px;
+  border-radius: 8px;
+}
+.aboutDescription p {
   color: #808080;
-  padding-left: 32px;
+  margin-left: 16px;
 }
 
 .profilePicture {
@@ -52,8 +57,7 @@
 }
 
 .heroIcons {
-  margin-top: 40px;
-  padding-left: 32px;
+  margin-top: 16px;
   align-self: flex-start;
 }
 
