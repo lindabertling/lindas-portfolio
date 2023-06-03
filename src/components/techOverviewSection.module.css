@@ -1,0 +1,23 @@
+.techSectionWrapper {
+  background-color: #ffffcc;
+  width: 100vw;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techOverviewContent {
+  width: 820px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techOverviewContent > h3 {
+}
+
+.techOverviewContent > p {
+  width: 500px;
+}
