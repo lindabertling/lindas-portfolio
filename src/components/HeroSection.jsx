@@ -54,22 +54,6 @@ const HeroSection = () => {
             fugiat autem inventore qui corrupti nisi!
           </p>
         </div>
-        {/* <section className={classes.heroIcons}>
-          <Link href={"https://www.linkedin.com/in/linda-bertling/"}>
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              size="2xl"
-              style={{ color: "#3c1d5a" }}
-            />
-          </Link>
-          <Link href={"https://github.com/lindabertling?tab=repositories"}>
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2xl"
-              style={{ color: "#3c1d5a" }}
-            />
-          </Link>
-        </section> */}
       </section>
     </div>
   );
