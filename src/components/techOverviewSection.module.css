@@ -15,9 +15,6 @@
   align-items: center;
 }
 
-.techOverviewContent > h3 {
-}
-
-.techOverviewContent > p {
+.techOverviewContent p {
   width: 500px;
 }

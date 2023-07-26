@@ -1,0 +1,26 @@
+.skillsSectionWrapper {
+  background-color: #edfcdb;
+  width: 100vw;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsContentWrapper {
+  width: 820px;
+}
+
+.skillsContentWrapper h3 {
+  color: #0c6900;
+}
+
+.skillsContent {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 24px;
+}
+
+.skillsColumn {
+  /* min-width: ; */
+}
