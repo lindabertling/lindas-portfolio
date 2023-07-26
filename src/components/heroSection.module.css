@@ -1,59 +1,50 @@
 .heroContentWrapper {
-  background-color: #f9f1ff;
   width: 100vw;
   height: 100vh;
 
   display: flex;
-}
 
-.heroImage {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url("../../public/images/img_gradient-background.jpg");
+  background-size: cover;
 }
 
 .aboutSection {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
   padding: 0 64px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture {
+  width: 80%;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solid #fff;
 }
 
 .introduction {
   display: flex;
-  align-items: center;
-  margin-bottom: 32px;
-}
-
-.introduction h1 {
-  color: #74649d;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introduction h2 {
-  color: #8f6474;
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 8px;
 }
 
-.aboutDescription {
-  background-color: #ffffff7a;
-  padding: 32px;
-  border-radius: 8px;
-}
-.aboutDescription p {
-  color: #808080;
-  margin-left: 16px;
-}
-
-.profilePicture {
-  width: 160px;
-  height: 160px;
-  border-radius: 100%;
-  border: 2px solid #fff;
-  object-fit: cover;
-  object-position: 0 -15px;
-  margin-right: 24px;
+.introduction p {
+  color: #626262;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 .heroIcons {
