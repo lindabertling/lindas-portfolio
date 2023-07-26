@@ -1,5 +1,5 @@
 .techSectionWrapper {
-  background-color: #ffffcc;
+  background-color: #c3d5df;
   width: 100vw;
   height: 85vh;
 
@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.techOverviewContent h3 {
+  color: #3a5b6d;
+}
+
 .techOverviewContent p {
   width: 500px;
+  color: #626262;
 }
