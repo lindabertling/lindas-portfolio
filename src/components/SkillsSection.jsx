@@ -48,10 +48,10 @@ const SkillsSection = () => {
     "Pair programming",
     "Mob programming",
   ];
-  const upcomingBullets = ["Redux", "TailWind CSS", "Animations"];
+  const upcomingBullets = ["Redux", "TailWind CSS", "Animations", "Sass"];
 
   return (
-    <section className={classes.skillsSectionWrapper}>
+    <section className={classes.skillsSectionWrapper} id="skills">
       <div className={classes.skillsContentWrapper}>
         <h3>SKILLS</h3>
         <div className={classes.skillsContent}>
