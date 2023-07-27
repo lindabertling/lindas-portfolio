@@ -21,6 +21,36 @@
   gap: 24px;
 }
 
-.skillsColumn {
-  /* min-width: ; */
+.skillsColumn h4 {
+  margin-bottom: 12px;
+}
+
+.highlighted {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.highlighted::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+.purple::before {
+  background-color: #e3caff;
+}
+.pink::before {
+  background-color: #eb5577;
+}
+.green::before {
+  background-color: #7bb580;
+}
+.blue::before {
+  background-color: #769fff;
 }

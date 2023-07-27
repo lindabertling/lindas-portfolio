@@ -1,10 +1,14 @@
 import React from "react";
 import classes from "./skillsSection.module.css";
 
-const ListSection = ({ title, listOfSkills }) => {
+const ListSection = ({ title, listOfSkills, background }) => {
   return (
     <div className={classes.skillsColumn}>
-      <h4>{title}</h4>
+      <h4>
+        <span className={`${classes.highlighted} ${classes[background]}`}>
+          {title}
+        </span>
+      </h4>
       <ul>
         {listOfSkills.map((skill) => {
           return <li key={skill}>{skill}</li>;
@@ -15,17 +19,62 @@ const ListSection = ({ title, listOfSkills }) => {
 };
 
 const SkillsSection = () => {
-  const codeSkills = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
+  const codeBullets = [
+    "HTML5",
+    "CSS3",
+    "JavaScript ES6",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Material UI",
+    "Node.js",
+    "SQL",
+    "Postgres",
+    "Java",
+  ];
+  const toolsBullets = [
+    "VS Code",
+    "Git",
+    "Kanban",
+    "Jira",
+    "Trello",
+    "Figma",
+    "Postman",
+    "Slack",
+    "Microsoft Teams",
+  ];
+  const moreBullets = [
+    "Agile methodology",
+    "Pair programming",
+    "Mob programming",
+  ];
+  const upcomingBullets = ["Redux", "TailWind CSS", "Animations"];
 
   return (
     <section className={classes.skillsSectionWrapper}>
       <div className={classes.skillsContentWrapper}>
         <h3>SKILLS</h3>
         <div className={classes.skillsContent}>
-          <ListSection title="Code" listOfSkills={codeSkills} />
-          <ListSection title="Tools" listOfSkills={codeSkills} />
-          <ListSection title="More" listOfSkills={codeSkills} />
-          <ListSection title="Upcoming" listOfSkills={codeSkills} />
+          <ListSection
+            title="Code"
+            listOfSkills={codeBullets}
+            background="purple"
+          />
+          <ListSection
+            title="Tools"
+            listOfSkills={toolsBullets}
+            background="pink"
+          />
+          <ListSection
+            title="More"
+            listOfSkills={moreBullets}
+            background="green"
+          />
+          <ListSection
+            title="Upcoming"
+            listOfSkills={upcomingBullets}
+            background="blue"
+          />
         </div>
       </div>
     </section>
