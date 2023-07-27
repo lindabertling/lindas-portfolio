@@ -1,6 +1,5 @@
 .skillsSectionWrapper {
-  background-color: #edfcdb;
-  background-color: #ffdebf;
+  background-color: #ffe1bf;
   width: 100vw;
   height: 85vh;
 
@@ -13,8 +12,7 @@
 }
 
 .skillsContentWrapper h3 {
-  color: #0c6900;
-  color: #a55000;
+  color: #ff8d0d;
 }
 
 .skillsContent {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import classes from "./heroSection.module.css";
-import { mukta, sourceCodePro } from "../utils/fonts";
+import { sourceCodePro } from "../utils/fonts";
 
 import profilePicture from "../../public/icons/icon_avatar.svg";
 
@@ -23,7 +23,7 @@ const HeroSection = () => {
           />
         </div>
         <div className={classes.introduction}>
-          <h2 className={mukta.className}>Hi, I'm Linda.</h2>
+          <h2>Hi, I'm Linda.</h2>
           <p className={sourceCodePro.className}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Voluptates, recusandae. Consequatur eligendi, totam ad voluptas

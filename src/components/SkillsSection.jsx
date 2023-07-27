@@ -1,52 +1,31 @@
 import React from "react";
 import classes from "./skillsSection.module.css";
 
+const ListSection = ({ title, listOfSkills }) => {
+  return (
+    <div className={classes.skillsColumn}>
+      <h4>{title}</h4>
+      <ul>
+        {listOfSkills.map((skill) => {
+          return <li key={skill}>{skill}</li>;
+        })}
+      </ul>
+    </div>
+  );
+};
+
 const SkillsSection = () => {
+  const codeSkills = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
+
   return (
     <section className={classes.skillsSectionWrapper}>
       <div className={classes.skillsContentWrapper}>
-        <h3>Skills</h3>
+        <h3>SKILLS</h3>
         <div className={classes.skillsContent}>
-          <div className={classes.skillsColumn}>
-            <h4>Code</h4>
-            <ul>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-            </ul>
-          </div>
-          <div className={classes.skillsColumn}>
-            <h4>Tools</h4>
-            <ul>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-            </ul>
-          </div>
-          <div className={classes.skillsColumn}>
-            <h4>More</h4>
-            <ul>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-            </ul>
-          </div>
-          <div className={classes.skillsColumn}>
-            <h4>Upcoming</h4>
-            <ul>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-              <li>Text</li>
-            </ul>
-          </div>
+          <ListSection title="Code" listOfSkills={codeSkills} />
+          <ListSection title="Tools" listOfSkills={codeSkills} />
+          <ListSection title="More" listOfSkills={codeSkills} />
+          <ListSection title="Upcoming" listOfSkills={codeSkills} />
         </div>
       </div>
     </section>
