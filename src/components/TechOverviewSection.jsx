@@ -1,13 +1,12 @@
 import React from "react";
 import classes from "./techOverviewSection.module.css";
-import { mukta, inter } from "../utils/fonts";
 
 const TechOverviewSection = () => {
   return (
     <section className={classes.techSectionWrapper}>
       <div className={classes.techOverviewContent}>
-        <h3 className={mukta.className}>TECH</h3>
-        <p className={inter.className}>
+        <h3>TECH</h3>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
           magni. Beatae quisquam laudantium ex nesciunt fuga. Architecto ad
           similique, repudiandae pariatur deleniti aspernatur laudantium, ea
