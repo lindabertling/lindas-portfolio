@@ -1,0 +1,37 @@
+.contactSectionWrapper {
+  width: 100vw;
+  /* height: 90vh; */
+  background-color: #d8efdc;
+  padding: 15vw;
+  padding-top: 64px;
+}
+
+.contactSectionWrapper h3 {
+  color: #358142;
+  text-transform: uppercase;
+}
+
+.contactSectionWrapper p {
+  font-size: 24px;
+}
+
+.contactSectionWrapper span {
+  position: relative;
+  z-index: 1;
+}
+
+.contactSectionWrapper span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  transform: skew(-15deg);
+  z-index: -1;
+  background-color: #eb5577;
+}
+
+.contactSectionWrapper span:nth-child(3)::before {
+  background-color: #769fff;
+}

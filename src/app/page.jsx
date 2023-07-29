@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import Navbar from "@/components/Navbar";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <TechOverviewSection />
       <SkillsSection />
+      <ContactSection />
     </main>
   );
 }
