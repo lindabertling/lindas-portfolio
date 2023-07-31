@@ -1,6 +1,6 @@
 "use client";
 
-import TechOverviewSection from "@/components/TechOverviewSection";
+import AboutSection from "@/components/AboutSection";
 import styles from "./page.module.css";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -12,7 +12,7 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <HeroSection />
-      <TechOverviewSection />
+      <AboutSection />
       <SkillsSection />
       <ContactSection />
     </main>
