@@ -11,11 +11,18 @@ const ContactSection = () => {
           <br />
           Please don't hesitate to{" "}
           <span>
-            <a href="mailto:lindabertling@hotmail.com">pop me an email</a>
+            <a href="mailto:lindabertling@hotmail.com" target="_blank">
+              pop me an email
+            </a>
           </span>{" "}
           at lindabertling@hotmail.com or via{" "}
           <span>
-            <a href="https://www.linkedin.com/in/linda-bertling/">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/linda-bertling/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </span>
           . I'd love to hear from you! 💌
         </p>
