@@ -25,21 +25,24 @@ const HeroSection = () => {
         <div className={classes.introduction}>
           <h2>Hi, I'm Linda.</h2>
           <p className={sourceCodePro.className}>
-            A frontend developer. A humble team player. A positive spirit. A
-            problem solver. An enthusiastic learner. A colourfull crafter. A
-            dancer.
-            {/*  A
-            member of the <i>make things happen</i> club. */}
+            I'm an enthusiastic frontend developer and I help companies build
+            seamless web experiences with React and modern technologies.
           </p>
           <section className={classes.heroIcons}>
-            <Link href={"https://www.linkedin.com/in/linda-bertling/"}>
+            <Link
+              href={"https://www.linkedin.com/in/linda-bertling/"}
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
                 size="2xl"
                 style={{ color: "#FFF" }}
               />
             </Link>
-            <Link href={"https://github.com/lindabertling?tab=repositories"}>
+            <Link
+              href={"https://github.com/lindabertling?tab=repositories"}
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2xl"

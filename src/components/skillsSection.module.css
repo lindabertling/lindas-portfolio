@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 64px 15vw;
 }
 .skillsContentWrapper {
-  width: 820px;
+  width: 100%;
 }
 
 .skillsContentWrapper h3 {

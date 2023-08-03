@@ -1,0 +1,23 @@
+.projectsSectionWrapper {
+  width: 100vw;
+  min-height: 90vh;
+  background-color: #fef8c8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 15vw;
+}
+
+.projectsSectionContent {
+  height: 100%;
+  width: 100%;
+}
+
+.projectsSectionContent h3 {
+  color: #fade05;
+}
+
+.projectsContainer {
+  width: 100%;
+}

@@ -21,7 +21,7 @@ const AboutSection = () => {
       content: (
         <>
           Another passion in my life is dancing, more specifically Cuban Salsa -
-          it is truly one of the best things in life! If you're curious about
+          it is truly one of the best things in life! If you are curious about
           salsa, you can find a short video of me dancing{" "}
           <Link
             href={salsaVideoUrl}
