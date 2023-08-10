@@ -22,10 +22,10 @@ const HeroSection = () => {
           />
         </div>
         <div className={classes.introduction}>
-          <h2>Hi, I'm Linda.</h2>
+          <h2>Hi, I&apos;m Linda.</h2>
           <p className={sourceCodePro.className}>
-            I'm an enthusiastic frontend developer and I help companies build
-            seamless web experiences with React and modern technologies.
+            I&apos;m an enthusiastic frontend developer and I help companies
+            build seamless web experiences with React and modern technologies.
           </p>
           <section className={classes.heroIcons}>
             <Link

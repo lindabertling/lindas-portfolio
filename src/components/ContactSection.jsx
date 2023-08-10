@@ -9,7 +9,7 @@ const ContactSection = () => {
         <p>
           Do you have questions or just want to say hi? 👋🏻
           <br />
-          Please don't hesitate to{" "}
+          Please don&apos;t hesitate to{" "}
           <span>
             <a href="mailto:lindabertling@hotmail.com" target="_blank">
               pop me an email
@@ -24,7 +24,7 @@ const ContactSection = () => {
               LinkedIn
             </a>
           </span>
-          . I'd love to hear from you! 💌
+          . I&apos;d love to hear from you! 💌
         </p>
       </div>
     </section>
