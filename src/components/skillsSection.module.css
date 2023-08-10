@@ -60,6 +60,7 @@
   .skillsSectionWrapper {
     padding: 40px 24px;
     align-items: flex-start;
+    height: fit-content;
   }
 
   .skillsContentWrapper h3 {
