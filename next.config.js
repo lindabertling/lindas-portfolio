@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { experimental: { css: true } };
+const nextConfig = {};
 
 module.exports = nextConfig;
