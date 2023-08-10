@@ -28,18 +28,10 @@ const Navbar = () => {
   return (
     <>
       <div className={classes.navbarContainer}>
-        <Link href={"/#about"} scroll={false}>
-          About
-        </Link>
-        <Link href={"/#projects"} scroll={false}>
-          Projects
-        </Link>
-        <Link href={"/#skills"} scroll={false}>
-          Skills
-        </Link>
-        <Link href={"/#contact"} scroll={false}>
-          Contact
-        </Link>
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#skills">Skills</a>
+        <a href="/#contact">Contact</a>
       </div>
       {showBackToTopIcon && (
         <div className={classes.backToTopIcon}>
