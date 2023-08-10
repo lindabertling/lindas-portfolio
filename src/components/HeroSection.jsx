@@ -9,7 +9,6 @@ import profilePicture from "../../public/icons/icon_avatar.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
