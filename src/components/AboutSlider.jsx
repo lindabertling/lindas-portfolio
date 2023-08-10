@@ -3,12 +3,12 @@ import classes from "./aboutSlider.module.css";
 
 const AboutSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [consoleLogged, setConsoleLogged] = useState();
+  const [consoleLogged, setConsoleLogged] = useState(false);
 
   useEffect(() => {
-    if (!consoleLogged) {
+    if (currentIndex != 0 && !consoleLogged) {
       console.log(
-        "Hi there! 👋🏻 I'm so excited you want to learn more about me. 🙌🏼"
+        "Hi there! 👋🏻 I'm so excited you want to learn more about me. 🙌🏼 Please do send me an email or connect on LinkedIn. 🌼"
       );
       setConsoleLogged(true);
     }
