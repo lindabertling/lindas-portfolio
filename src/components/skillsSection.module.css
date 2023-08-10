@@ -55,3 +55,21 @@
 .blue::before {
   background-color: #769fff;
 }
+
+@media (max-width: 600px) {
+  .skillsSectionWrapper {
+    padding: 40px 24px;
+    align-items: flex-start;
+    height: fit-content;
+  }
+
+  .skillsContentWrapper h3 {
+    margin-bottom: 24px;
+  }
+
+  .skillsContent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+  }
+}

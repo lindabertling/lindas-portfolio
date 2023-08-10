@@ -19,6 +19,7 @@
 
 .cardContentContainer {
   padding: 24px;
+  min-height: 50%;
 }
 
 .cardContentContainer h2 {
@@ -72,4 +73,28 @@
 
 .button:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-height: 600px;
+  }
+
+  .projectStackLabels {
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .projectStackLabels p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .cardButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin-bottom: 8px;
+  }
 }
