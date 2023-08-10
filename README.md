@@ -1,4 +1,5 @@
 # My Portfolio Website
+Visit [lindabertling.com](https://lindabertling.com/) to check it out! 🎉
 
 ## Overview
 
