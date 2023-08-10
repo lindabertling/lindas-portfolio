@@ -25,9 +25,7 @@ const SkillsSection = () => {
     "JavaScript ES6",
     "TypeScript",
     "React",
-    "Next.js",
     "Material UI",
-    "Node.js",
     "SQL",
     "Postgres",
     "Java",
@@ -48,7 +46,14 @@ const SkillsSection = () => {
     "Pair programming",
     "Mob programming",
   ];
-  const upcomingBullets = ["Redux", "Tailwind CSS", "Animations", "Sass"];
+  const upcomingBullets = [
+    "Redux",
+    "Next.js",
+    "Node.js",
+    "Tailwind CSS",
+    "Animations",
+    "Sass",
+  ];
 
   return (
     <section className={classes.skillsSectionWrapper} id="skills">
