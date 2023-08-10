@@ -46,6 +46,12 @@
   color: #fff;
 }
 
+.cardButtons {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
 .button {
   margin-right: 16px;
   padding: 4px 12px;

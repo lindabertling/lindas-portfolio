@@ -50,9 +50,10 @@ const ProjectsSection = () => {
   const handleViewMore = (project) => {
     setShowModal(true);
     setSelectedProject(project);
+    alert("Under construction! 👷🏻‍♀️ More to come soon.");
   };
   return (
-    <section className={classes.projectsSectionWrapper}>
+    <section className={classes.projectsSectionWrapper} id="projects">
       <div className={classes.projectsSectionContent}>
         <h3>FEATURED PROJECTS</h3>
         <div className={classes.projectsContainer}>
@@ -65,7 +66,7 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-      {showModal && <ProjectModal project={selectedProject} />}
+      {/* {showModal && <ProjectModal project={selectedProject} />} */}
     </section>
   );
 };
