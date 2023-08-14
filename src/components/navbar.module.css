@@ -40,6 +40,7 @@
   position: fixed;
   top: 12px;
   right: 12px;
+  z-index: 999;
 }
 
 .bar {
@@ -61,6 +62,40 @@
 
 .hamburgerMenu.open .bar:last-child {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+.drawerWrapper {
+  background: transparent;
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menuDrawer {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  right: -50vw;
+  background-color: #77b5f8;
+  padding-top: 64px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 1s;
+}
+
+.menuDrawer.open {
+  transform: translateX(-50vw);
+  transition: 1s;
+}
+
+.menuItem {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 600px) {
