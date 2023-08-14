@@ -5,15 +5,44 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp } from "@fortawesome/free-solid-svg-icons";
 
-const HamburgerMenu = ({ isMenuOpen, handleClose }) => {
+const HamburgerMenu = ({ isMenuOpen, toggleMenu }) => {
   return (
     <div
       className={`${classes.hamburgerMenu} ${isMenuOpen ? classes.open : ""}`}
-      onClick={handleClose}
+      onClick={toggleMenu}
     >
       <div className={classes.bar}></div>
       <div className={classes.bar}></div>
       <div className={classes.bar}></div>
+    </div>
+  );
+};
+
+const MenuDrawer = ({ toggleMenu, isMenuOpen }) => {
+  return (
+    <div
+      className={`${classes.drawerWrapper} ${isMenuOpen ? classes.open : ""}`}
+      onClick={toggleMenu}
+    >
+      <div
+        className={`${classes.menuDrawer} ${isMenuOpen ? classes.open : ""}`}
+      >
+        <div className={classes.menuItem} onClick={toggleMenu}>
+          <a href="/#">Back to top</a>
+        </div>
+        <div className={classes.menuItem} onClick={toggleMenu}>
+          <a href="/#about">About</a>
+        </div>
+        <div className={classes.menuItem} onClick={toggleMenu}>
+          <a href="/#projects">Projects</a>
+        </div>
+        <div className={classes.menuItem} onClick={toggleMenu}>
+          <a href="/#skills">Skills</a>
+        </div>
+        <div className={classes.menuItem} onClick={toggleMenu}>
+          <a href="/#contact">Contact</a>
+        </div>
+      </div>
     </div>
   );
 };
@@ -25,7 +54,6 @@ const Navbar = () => {
 
   useEffect(() => {
     setViewportWidth(window.innerWidth);
-    console.log(viewportWidth);
 
     const handleScroll = () => {
       const breakPoint = 600;
@@ -43,8 +71,8 @@ const Navbar = () => {
     };
   }, [viewportWidth]);
 
-  const handleClose = () => {
-    setIsMenuOpen(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -57,8 +85,12 @@ const Navbar = () => {
           <a href="/#contact">Contact</a>
         </div>
       ) : (
-        <HamburgerMenu isMenuOpen={isMenuOpen} handleClose={handleClose} />
+        <HamburgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       )}
+      {isMenuOpen && (
+        <MenuDrawer toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      )}
+
       {showBackToTopIcon && (
         <div className={classes.backToTopIcon}>
           <Link href={"/#"}>
