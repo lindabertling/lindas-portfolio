@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import classes from "./navbar.module.css";
-import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp } from "@fortawesome/free-solid-svg-icons";
@@ -91,13 +90,13 @@ const Navbar = () => {
 
       {showBackToTopIcon && (
         <div className={classes.backToTopIcon}>
-          <Link href={"/#"}>
+          <a href={"/#"}>
             <FontAwesomeIcon
               icon={faCircleUp}
               size="xl"
               style={{ color: "#ffffff" }}
             />
-          </Link>
+          </a>
         </div>
       )}
     </>
