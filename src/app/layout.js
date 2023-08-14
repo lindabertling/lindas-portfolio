@@ -6,7 +6,7 @@ config.autoAddCss = false;
 
 export const metadata = {
   title: "Linda's portfolio",
-  description: "Designed and Created by Linda Bertling",
+  description: "Design and implementation by Linda Bertling",
 };
 
 export default function RootLayout({ children }) {
