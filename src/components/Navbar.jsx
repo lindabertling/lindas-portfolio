@@ -20,7 +20,10 @@ const HamburgerMenu = ({ isMenuOpen, toggleMenu }) => {
 
 const MenuDrawer = ({ toggleMenu, isMenuOpen }) => {
   return (
-    <div className={classes.drawerWrapper} onClick={toggleMenu}>
+    <div
+      className={`${classes.drawerWrapper} ${isMenuOpen ? classes.open : ""}`}
+      onClick={toggleMenu}
+    >
       <div
         className={`${classes.menuDrawer} ${isMenuOpen ? classes.open : ""}`}
       >
@@ -84,9 +87,9 @@ const Navbar = () => {
       ) : (
         <HamburgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       )}
-      {isMenuOpen && (
-        <MenuDrawer toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-      )}
+
+      <MenuDrawer toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+
       {showBackToTopIcon && (
         <div className={classes.backToTopIcon}>
           <Link href={"/#"}>
