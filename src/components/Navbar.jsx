@@ -87,8 +87,9 @@ const Navbar = () => {
       ) : (
         <HamburgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       )}
-
-      <MenuDrawer toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      {isMenuOpen && (
+        <MenuDrawer toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      )}
 
       {showBackToTopIcon && (
         <div className={classes.backToTopIcon}>

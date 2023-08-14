@@ -74,6 +74,7 @@
   transition: 0.3s;
   display: flex;
   justify-content: flex-end;
+  pointer-events: none;
 }
 
 .menuDrawer {
@@ -94,6 +95,7 @@
 .drawerWrapper.open {
   background-color: rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  pointer-events: all;
 }
 
 .menuDrawer.open {
