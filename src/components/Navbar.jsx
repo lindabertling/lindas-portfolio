@@ -27,7 +27,7 @@ const MenuDrawer = ({ toggleMenu, isMenuOpen }) => {
         className={`${classes.menuDrawer} ${isMenuOpen ? classes.open : ""}`}
       >
         <div className={classes.menuItem} onClick={toggleMenu}>
-          <a href="/#">Back to top</a>
+          <a href="/#">Home</a>
         </div>
         <div className={classes.menuItem} onClick={toggleMenu}>
           <a href="/#about">About</a>
