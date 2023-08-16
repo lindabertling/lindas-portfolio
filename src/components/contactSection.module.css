@@ -35,9 +35,22 @@
   background-color: #769fff;
 }
 
+@media (min-width: 1116px) and (max-width: 1241px) {
+  .contactSectionWrapper {
+    padding-right: 23vw; /* So that the highlight in 'LinkedIn' doesn't break */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 618px) {
+  .contactSectionWrapper p {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .contactSectionWrapper {
     padding: 40px 24px;
+    padding-right: 56px;
   }
 
   .contactSectionWrapper h3 {
@@ -47,5 +60,11 @@
   .contactSectionWrapper p {
     font-size: 16px;
     margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 369px) {
+  .contactSectionWrapper {
+    padding: 40px 12px;
   }
 }
