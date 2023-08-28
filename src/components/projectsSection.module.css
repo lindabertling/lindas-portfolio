@@ -21,22 +21,28 @@
 .projectsContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .projectsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .projectsSectionWrapper {
+  /* .projectsSectionWrapper {
     padding: 40px 24px;
-  }
+  } */
 
   .projectsSectionContent h3 {
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projectsSectionWrapper {
+    padding: 40px 24px;
   }
 }
