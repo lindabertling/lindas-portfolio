@@ -65,6 +65,7 @@
   border: none;
   background-color: #7bb580;
   color: #fff;
+  cursor: pointer;
 }
 
 .button svg {
