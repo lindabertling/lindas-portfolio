@@ -76,8 +76,11 @@
   background-color: #eb5577;
 }
 
-.button:hover {
-  opacity: 0.6;
+@media (hover: hover) and (pointer: fine) {
+  /* css hover class/style */
+  .button:hover {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: 990px) {
