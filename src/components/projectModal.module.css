@@ -19,6 +19,7 @@
   padding: 24px;
   overflow-y: auto;
   border: 16px solid white;
+  z-index: 99;
 }
 
 .modalWrapper .title {
@@ -57,4 +58,17 @@
   width: 100%;
   height: auto;
   object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  .modalWrapper {
+    width: 90vw;
+  }
+  .modalWrapper h2 {
+    font-size: 32px;
+  }
+
+  .modalWrapper p {
+    font-size: 14px;
+  }
 }

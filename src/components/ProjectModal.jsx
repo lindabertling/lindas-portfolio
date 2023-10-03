@@ -27,6 +27,7 @@ const ProjectModal = ({ project, handleClose }) => {
         </div>
         <div className={classes.mainContent}>
           <p>{project.description}</p>
+          <br />
           <p>{project.additionalInfo}</p>
           <div className={classes.modalImages}>
             {project.additionalImages.map((image, index) => (
