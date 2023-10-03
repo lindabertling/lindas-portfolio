@@ -8,6 +8,23 @@
   align-items: center;
 }
 
+.modalWrapper {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  overflow-y: auto;
+  border: 16px solid white;
+}
+
+.modalWrapper .title {
+  margin-top: 10px;
+}
+
 .closeBtnWrapper {
   display: flex;
   justify-content: flex-end;
@@ -25,27 +42,15 @@
   transition: 0.2s;
 }
 
-.modalWrapper {
-  width: 80vw;
-  height: 80vh;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  overflow-y: auto;
-}
-
-.modalWrapper .title {
-  margin-top: 10px;
-}
-
 .mainContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mainContent p {
+  align-self: flex-start;
 }
 
 .mainContent img {

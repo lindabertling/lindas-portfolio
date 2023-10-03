@@ -47,6 +47,24 @@ const ProjectsSection = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(false);
 
+  useEffect(() => {
+    if (showModal) {
+      disableScrolling();
+    } else {
+      enableScrolling();
+    }
+  }, [showModal]);
+
+  const disableScrolling = () => {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+  };
+
+  const enableScrolling = () => {
+    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
+  };
+
   const handleViewMore = (project) => {
     setShowModal(true);
     setSelectedProject(project);
@@ -57,6 +75,7 @@ const ProjectsSection = () => {
     setShowModal(false);
     document.body.classList.remove(classes.noScroll);
   };
+
   return (
     <>
       {showModal && (
