@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./projectsSection.module.css";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
@@ -47,27 +47,58 @@ const ProjectsSection = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(false);
 
+  useEffect(() => {
+    if (showModal) {
+      disableScrolling();
+    } else {
+      enableScrolling();
+    }
+  }, [showModal]);
+
+  const disableScrolling = () => {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+  };
+
+  const enableScrolling = () => {
+    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
+  };
+
   const handleViewMore = (project) => {
     setShowModal(true);
     setSelectedProject(project);
-    alert("Under construction! 👷🏻‍♀️ More to come soon.");
+    document.body.classList.add(classes.noScroll);
   };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    document.body.classList.remove(classes.noScroll);
+  };
+
   return (
-    <section className={classes.projectsSectionWrapper} id="projects">
-      <div className={classes.projectsSectionContent}>
-        <h3>FEATURED PROJECTS</h3>
-        <div className={classes.projectsContainer}>
-          {projectList.map((project) => (
-            <ProjectCard
-              key={project.title}
-              project={project}
-              handleViewMore={handleViewMore}
-            />
-          ))}
+    <>
+      {showModal && (
+        <ProjectModal
+          project={selectedProject}
+          handleClose={handleCloseModal}
+        />
+      )}
+      <section className={classes.projectsSectionWrapper} id="projects">
+        <div className={classes.projectsSectionContent}>
+          <h3>FEATURED PROJECTS</h3>
+          <div className={classes.projectsContainer}>
+            {projectList.map((project) => (
+              <ProjectCard
+                key={project.title}
+                project={project}
+                handleViewMore={handleViewMore}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      {/* {showModal && <ProjectModal project={selectedProject} />} */}
-    </section>
+      </section>
+    </>
   );
 };
 
