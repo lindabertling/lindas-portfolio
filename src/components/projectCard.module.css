@@ -83,6 +83,10 @@
   }
 }
 
+.noHover {
+  pointer-events: none;
+}
+
 @media (max-width: 990px) {
   .button {
     font-size: 12px;

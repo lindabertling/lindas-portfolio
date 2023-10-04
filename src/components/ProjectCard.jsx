@@ -8,6 +8,14 @@ import { faGlobe, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCard = ({ project, handleViewMore }) => {
+  const handleClickViewMore = (project, event) => {
+    handleViewMore(project);
+    event.target.classList.add(classes.noHover);
+    setTimeout(() => {
+      event.target.classList.remove(classes.noHover);
+    }, 500);
+  };
+
   return (
     <div className={classes.card}>
       <div className={classes.imageContainer}>
@@ -61,7 +69,7 @@ const ProjectCard = ({ project, handleViewMore }) => {
           {!project.isPublished && (
             <div
               className={classes.button}
-              onClick={() => handleViewMore(project)}
+              onClick={(event) => handleClickViewMore(project, event)}
             >
               <FontAwesomeIcon
                 icon={faCircleInfo}

@@ -3,8 +3,6 @@ import classes from "./projectModal.module.css";
 import Image from "next/image";
 
 const ProjectModal = ({ project, handleClose }) => {
-  console.log(project);
-
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       handleClose();

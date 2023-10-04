@@ -1,5 +1,3 @@
-"use client";
-
 import AboutSection from "@/components/AboutSection";
 import styles from "./page.module.css";
 import HeroSection from "@/components/HeroSection";
